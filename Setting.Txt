@@ -1,0 +1,13 @@
+   0.5       Minf 
+   1000000    Rinf !Reynolds Num.   
+   0         ALF        
+   278        Tt  !Total Temp jaryan azad
+  -6.0        ERmx   
+   0.90       CFLx    
+   4          NRKS   
+   100        NWrite  
+   0          Init
+   0.65       K2
+   0.008      K4
+   2          TotTime
+   1          Time_Coe

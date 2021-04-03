@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{84D08680-463C-4DD1-BF51-66513C606579}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole" StackReserveSize="999999999" StackCommitSize="999999999"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole" StackReserveSize="999999999" StackCommitSize="999999999"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd;h;inc"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<Filter Name="BoundCondition">
+		<File RelativePath=".\sub\ApplyBoundCondition.F90"/>
+		<File RelativePath=".\sub\BC_FarField3D.f90"/>
+		<File RelativePath=".\sub\BC_FarFieldTwoEqTurb.f90"/>
+		<File RelativePath=".\sub\BC_InFlow3D.f90"/>
+		<File RelativePath=".\sub\BC_InflowTwoEqTurb.f90"/>
+		<File RelativePath=".\sub\BC_interior.f90"/>
+		<File RelativePath=".\sub\BC_InteriorTwoEqTurb.f90"/>
+		<File RelativePath=".\sub\BC_OutFlowTwoEqTurb.f90"/>
+		<File RelativePath=".\sub\BC_SymetryTwoEqTurb.f90"/>
+		<File RelativePath=".\sub\BC_Symmetry3D.f90"/>
+		<File RelativePath=".\sub\BC_VisOutFlow3D.f90"/>
+		<File RelativePath=".\sub\BC_Wall3D.f90"/>
+		<File RelativePath=".\sub\BC_WallTwoEqTurb.f90"/></Filter>
+		<Filter Name="Gradient Calculation">
+		<File RelativePath=".\sub\Cal_CellGrad.F90"/>
+		<File RelativePath=".\sub\Cal_FaceGrad.F90"/></Filter>
+		<Filter Name="Massive cal">
+		<File RelativePath=".\sub\Cal_Residual.f90"/>
+		<File RelativePath=".\sub\RunkKutaUpdatVariables.f90"/>
+		<File RelativePath=".\sub\TimSTP_Turb3D.f90"/>
+		<File RelativePath=".\sub\TrasFacValToCell.f90"/>
+		<File RelativePath=".\sub\wrapper_Cal_Residual.f90"/></Filter>
+		<Filter Name="MeshPreProc">
+		<File RelativePath=".\sub\FaceOfCell.f90"/>
+		<File RelativePath=".\sub\FaceProprties3D.f90"/>
+		<File RelativePath=".\sub\FindConnectedFaces.f90"/>
+		<File RelativePath=".\sub\GeoCal3D.f90"/>
+		<File RelativePath=".\sub\MeshBC3D.f90"/>
+		<File RelativePath=".\sub\PointOfCell3D.f90"/>
+		<File RelativePath=".\sub\Read_3DMesh.f90"/>
+		<File RelativePath=".\sub\WallDistance3D.f90"/></Filter>
+		<Filter Name="Modules">
+		<File RelativePath=".\sub\GradientModule.f90"/>
+		<File RelativePath=".\sub\KwSSTVarModule.f90"/>
+		<File RelativePath=".\sub\LocalVar.f90"/>
+		<File RelativePath=".\sub\MeanFlowVar.f90"/>
+		<File RelativePath=".\sub\MeshVar.f90"/>
+		<File RelativePath=".\sub\TransientVar.f90"/>
+		<File RelativePath=".\sub\TurbulenceVar.f90"/></Filter>
+		<Filter Name="PostProc">
+		<File RelativePath=".\sub\ResMass3D.f90"/>
+		<File RelativePath=".\sub\Write3DMeshSepRgn_gid_plt.f90"/>
+		<File RelativePath=".\sub\Write_CF3D.f90"/>
+		<File RelativePath=".\sub\Write_ConservativeVariables3D.f90"/>
+		<File RelativePath=".\sub\Write_CP3D.f90"/>
+		<File RelativePath=".\sub\Write_FlatPlateAnalyticData3D.f90"/>
+		<File RelativePath=".\sub\Write_ScalarContour3D.f90"/>
+		<File RelativePath=".\sub\Write_VelocityContour3D.f90"/></Filter>
+		<Filter Name="PreProc">
+		<File RelativePath=".\sub\InitMeanFlow3D.f90"/>
+		<File RelativePath=".\sub\Kw_Init.f90"/>
+		<File RelativePath=".\sub\Read_Setting.f90"/></Filter>
+		<Filter Name="Space Integration">
+		<File RelativePath=".\sub\AUSM_PlusUP3D.f90"/>
+		<File RelativePath=".\sub\BoundarConMeanFlow.f90"/>
+		<File RelativePath=".\sub\DifMeanFlowBoundary.f90"/>
+		<File RelativePath=".\sub\DifMeanFlowInterior.f90"/>
+		<File RelativePath=".\sub\KwSST_Func3D.f90"/>
+		<File RelativePath=".\sub\KwSST_Source3D.f90"/>
+		<File RelativePath=".\sub\KwSSTdiffBoundary.f90"/>
+		<File RelativePath=".\sub\KwSSTdiffInterior.f90"/>
+		<File RelativePath=".\sub\TwoEqTurbConvectionBoundary.f90"/>
+		<File RelativePath=".\sub\TwoEqTurbConvectionInterior.f90"/></Filter>
+		<Filter Name="VirtualMesh">
+		<File RelativePath=".\sub\FaceOfCellVmesh.f90"/>
+		<File RelativePath=".\sub\GenerateVirtualMesh3D.f90"/>
+		<File RelativePath=".\sub\VirtualFaceProprties3D.f90"/>
+		<File RelativePath=".\sub\VirtualMeshModule.f90"/></Filter>
+		<File RelativePath=".\DANS_Turb_3D.f90"/></Filter></Files>
+	<Globals/></VisualStudioProject>
